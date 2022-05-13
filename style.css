@@ -1,0 +1,63 @@
+body{
+    background-color: antiquewhite;
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+h3{
+    color: rgb(31, 255, 248);
+}
+.container{
+    display: flex;
+    width: 100%;
+}
+.panel{
+    position: relative;
+    height: 80vh;
+    flex: 0.5;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
+    margin: 10px;
+    transition: all 700ms ease-in;
+}
+.panel.active{
+    flex: 5;
+}
+.panel h3{
+    font-size: 25px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;
+    font-family: 'Courier New';
+}
+.panel.active h3{
+    opacity: 1;
+    transition: opacity 300ms ease-in 400ms;
+}
+
+#panel-1{
+    background-image: url("https://cdn.vox-cdn.com/thumbor/E-juvOwHKIBKP3cvtKWr-__xOIg=/1400x788/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/22410692/Lamborghini_Car_Picture.jpg");
+    
+}
+#panel-2{
+    background-image: url("https://stimg.cardekho.com/images/carexteriorimages/930x620/Ferrari/SF90-Stradale/7858/1591619661237/front-left-side-47.jpg");
+}
+#panel-3{
+    background-image: url("https://s3-prod-europe.autonews.com/s3fs-public/styles/1200x630/public/Rolls%20Royce%20Ghost%20900x540.jpg");
+}
+#panel-4{
+    background-image: url("https://stimg.cardekho.com/images/carexteriorimages/930x620/Bentley/Continental/7775/1587039057669/front-left-side-47.jpg");
+}
+#panel-5{
+    background-image: url("https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/2019-mercedes-benz-a220-4matic-108-1544471119.jpg?crop=0.675xw:0.505xh;0.0442xw,0.464xh&resize=1200:*");
+}
